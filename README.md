@@ -33,17 +33,20 @@ The trained model was saved as best_model.h5.
 
 ## 🔁 Project Flow
 
-1️⃣ Audio Preprocessing
+1️⃣ Audio Preprocessing:
+
 Each .wav file is converted into MFCC features.
 
 Padding is applied to ensure consistent input length for the model.
 
-2️⃣ Label Encoding
+2️⃣ Label Encoding:
+
 Spoken digits (ek, do, etc.) are mapped to integer labels (0–9).
 
 One-hot encoding prepares the targets for classification.
 
-3️⃣ Model Design
+3️⃣ Model Design:
+
 A sequential LSTM-based RNN model was used:
 
 - Layers:
@@ -56,10 +59,15 @@ Final Dense layer with softmax activation
 
 - Optimizer: adam
 
-4️⃣ Training
+4️⃣ Training:
+
 Trained on augmented MFCC features
 
+
+
 Achieved ~90% accuracy on unseen Hindi recordings
+
+
 
 Saved model: best_model.h5
 
